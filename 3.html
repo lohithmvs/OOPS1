@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            name;
+            position;
+            salary;
+            constructor(name,position,salary){
+                this.name=name;
+                this.position=position;
+                this.salary=salary;
+            }
+            bonus(){
+                console.log(this.salary*0.2);
+            }
+        }
+        let obj=new Employee("Lohith","jr Ex",5000);
+        obj.bonus();
+    </script>
+</body>
+</html>

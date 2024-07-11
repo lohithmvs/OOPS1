@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class shape{
+            name;
+            color;
+            constructor(name,color){
+                this.name=name;
+                this.color=color;
+            } 
+        }
+        class Circle extends shape{
+            constructor(name,color,l,b){
+                super(name,color);
+                this.l=l;
+                this.b=b;
+            }
+            area(){
+                console.log(this.l*this.b);
+            }
+            perimeter(){
+                console.log(2*(this.l+this.b));
+            }
+        }
+        let obj=new Circle("circle","red",10,10);
+        obj.area();
+        obj.perimeter();
+        console.log(obj.color);
+    </script>
+</body>
+</html>
